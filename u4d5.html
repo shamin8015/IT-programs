@@ -1,0 +1,24 @@
+<!--Write a program to create a HTML page in which, if you mouse over on 
+image so image opacity will be decreased and if you mouse out so, it 
+gains the original opacity back using CSS.-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Opacity Hover Effect</title>
+    <style>
+        img {
+            width: 300px;
+            height: auto;
+            opacity: 1;
+            transition: opacity 0.5s ease; 
+        }
+        img:hover {
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hover over the image</h1>
+    <img src="marwadi_university_article.png" alt="Image">
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!--Write a program to create one 3x3 HTML table which display different 
+color name in each cell and when you mouse over on that cell so it 
+change the bgcolor of that cell as per the color is mentioned in that cell 
+using CSS.-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Color Table Hover Effect</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 300px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        td {
+            border: 1px solid black;
+            padding: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .red:hover {
+            background-color: red;
+            color: white;
+        }
+        .green:hover {
+            background-color: green;
+            color: white;
+        }
+        .blue:hover {
+            background-color: blue;
+            color: white;
+        }
+        .yellow:hover {
+            background-color: yellow;
+        }
+        .purple:hover {
+            background-color: purple;
+            color: white;
+        }
+        .orange:hover {
+            background-color: orange;
+        }
+        .pink:hover {
+            background-color: pink;
+        }
+        .brown:hover {
+            background-color: brown;
+            color: white;
+        }
+        .cyan:hover {
+            background-color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <h2>Hover over a cell to see the color</h2>
+    <table>
+        <tr>
+            <td class="red">Red</td>
+            <td class="green">Green</td>
+            <td class="blue">Blue</td>
+        </tr>
+        <tr>
+            <td class="yellow">Yellow</td>
+            <td class="purple">Purple</td>
+            <td class="orange">Orange</td>
+        </tr>
+        <tr>
+            <td class="pink">Pink</td>
+            <td class="brown">Brown</td>
+            <td class="cyan">Cyan</td>
+        </tr>
+    </table>
+</body>
+</html>
