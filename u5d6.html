@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<div id="box" style="width:100px;height:100px;background:green"></div>
+
+<script>
+  $(document).ready(function(){
+    $("#box").mouseenter(function(){ $(this).css("background", "blue"); });
+    $("#box").mouseleave(function(){ $(this).css("background", "green"); });
+  });
+</script>
+</body>
+</html>
